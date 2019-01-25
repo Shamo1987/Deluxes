@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Deluxes</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- LOAD MAIN CSS -->
+    <link href="/Deluxes/style.css" rel="stylesheet" type="text/css">
+    <!-- LOAD COLOR STYLE (OPTONAL) CSS -->
+    <link href="/Deluxes/lunar.css" rel="stylesheet" type="text/css" id="colorstyle">
+    <!-- LOAD CUSTOM CSS -->
+    <link href="/Deluxes/custom.css" rel="stylesheet" type="text/css">
+    <!-- LOAD DEMO CSS -->
+    <link href="/Deluxes/demo/demo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <!-- WRAPPER START -->
+    <div id="wrapper">
+        <!-- HEADER START -->
+        <section id="header">
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="/Deluxes/images/deluxelogo.png" alt="">
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om oss</a>
+                                
+                            </li>
+                           
+                            
+                            
+                           
+                           
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kontakta oss</a>
+                                
+                            </li>
+                            <li><a href="shop-cart.html"><i class="fa fa-shopping-cart fa-fw"></i> Varukorg </a></li>
+
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </section>
+        <!-- HEADER END -->
+        <!-- PAGE TITLE START -->
+        <section id="title" class="container-fluid wow fadeInDown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h1 style="color:red">Deluxes  <small>Katalog</small></h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- PAGE TITLE END -->
+        <!-- CONTENT START -->
+        <section id="content">
+            @RenderBody()
+
+        </section>
+        <!-- CONTENT END -->
+        <!-- FOOTER START -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                       
+                        <ul class="list-unstyled list-inline social-icons">
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook facebook"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter twitter"></i></a></li>
+                            <li><a href="#" class="googleplus"><i class="fa fa-google-plus googleplus"></i></a></li>
+                            <li><a href="#" class="youtube"><i class="fa fa-youtube youtube"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <h4>KONTAKTA OSS</h4>
+                        <p><i class="fa fa-map-pin fa-fw"></i>Liljeholmstorget 7,11763</p>
+                        <p><i class="fa fa-phone fa-fw"></i>08-54583580 </p>
+                       
+                        <p><i class="fa fa-envelope fa-fw"></i> sti@deluxes.se</p>
+                    </div>
+                    
+               
+                <div class="row">
+                    <hr>
+                    <div class="col-md-12 text-center bottom">
+                        <p>Copyright &copy; 2019 . All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER END -->
+
+    </div>
+    <!-- WRAPPER END -->
+    <!-- back to top button -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+    <!-- MAIN JS FILES REQUIRED ON ALL PAGES -->
+    <script src="/Deluxes/vendor/jquery/jquery.min.js"></script>
+    <script src="/Deluxes/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Deluxes/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="/Deluxes/vendor/wow/wow.min.js"></script>
+    <script src="/Deluxes/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="/Deluxes/vendor/SmoothScroll/SmoothScroll.min.js"></script>
+    <script src="/Deluxes/vendor/waypoints/waypoints.min.js"></script>
+    <script src="/Deluxes/vendor/counterup/jquery.counterup.min.js"></script>
+
+    <!-- HERO SLIDER-->
+    <script src="/Deluxes/vendor/hero-slider/js/modernizr.js"></script>
+    <script src="/Deluxes/vendor/hero-slider/js/main.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="/Deluxes/vendor/owl-carousel/owl.carousel.js"></script>
+    <!-- FILTERIZR -->
+    <script src="/Deluxes/vendor/jquery/jquery.filterizr.js"></script>
+    <!-- EDURA JS REQUIRED ON ALL PAGES-->
+    <script src="/Deluxes/edura.js"></script>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81122143-3', 'auto');
+      ga('send', 'pageview');</script>
+    <!-- STYLE SWITCHER -->
+    <script src="/Deluxes/demo/demo.js"></script>
+    <div id="styleswitcher">
+        <input id="settings-btn" class="settings-btn" type="checkbox">
+        
+        <div class="buttons-wrapper settings-box-element">
+            <h4 class="text-uppercase">Change Color Style</h4>
+            <p><button id="demo-lunar" class="btn demo-btn demo-lunar">Lunar (Default)</button></p>
+            <p><button id="demo-blue" class="btn demo-btn demo-blue">Blue</button></p>
+            <p><button id="demo-green" class="btn demo-btn demo-green">Green</button></p>
+            <p><button id="demo-red" class="btn demo-btn demo-red">Red</button></p>
+            <p><button id="demo-orange" class="btn demo-btn demo-orange">Orange</button></p>
+        </div>
+    </div>
+</body>
+
+</html>

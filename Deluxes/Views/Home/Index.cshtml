@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Deluxes.Models.Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<section class="container" id="shop">
+    <div class="row">
+
+        <!-- main column start -->
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="row product-results">
+                        <div class="product-results">
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="text-center product-item">
+                            <div class="product-item-top">
+                                <img class="img-responsive" alt="" src="/images/@item.Image">
+                                <div class="mask"></div>
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href="/Product/Details/@item.Id"><i class="fa fa-link fa-fw"></i></a></li>
+                                    <li><a href="/Product/Details/@item.Id"><i class="fa fa-cart-plus fa-fw"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-item-inner">
+                                <h3 class="product-title"><a href="#">/@item.Name</a></h3>
+                                <p class="product-price">@item.Price sek</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+                <div class="col-md-12 wow fadeIn" style="visibility: hidden; animation-name: none;">
+                    <div class="row text-center" id="pagination">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="disabled">
+                                    <a aria-label="Previous" href="#">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main column end -->
+    </div>
+
+</section>
+
